@@ -1,17 +1,17 @@
 import "./assets/styles/App.scss";
-import logo from "./assets/images/cookchef-d.png";
+import "./assets/styles/index.scss";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Homepage from "./pages/Homepage";
+import styles from "./assets/styles/App.module.scss";
 
 function App() {
   return (
-    <header>
-      <div>
-        <img src={logo} alt="logo" />
-      </div>
-      <ul>
-        <button>Whislist</button>
-        <button>Connexion</button>
-      </ul>
-    </header>
+    <div className={`d-flex flex-column ${styles.appContainer}`}>
+      <Header />
+      <Homepage />
+      <Footer />
+    </div>
   );
 }
 

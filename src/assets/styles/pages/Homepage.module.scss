@@ -1,0 +1,10 @@
+.contentCard {
+  max-width: 1130px;
+  width: 100%;
+  .grid {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 350px);
+    gap: 20px;
+  }
+}
