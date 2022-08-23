@@ -11,7 +11,7 @@ const Recipe = () => {
       <div
         className={`${styles.recipeTitle} d-flex flex-column justify-content-center align-items-center`}>
         <h3 className="mb-20">Recipe</h3>
-        <span>coeur</span>
+        <i className="fa-solid fa-heart"></i>
       </div>
     </div>
   );
