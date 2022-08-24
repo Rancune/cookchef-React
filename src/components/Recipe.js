@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import styles from "../assets/styles/components/Recipe.module.scss";
-import imgRecipe from "../assets/images/ramen.jpg";
 
-const Recipe = () => {
+const Recipe = ({ title, image }) => {
   const [liked, setLiked] = useState(false);
 
   const handleClick = () => {
@@ -14,11 +13,11 @@ const Recipe = () => {
       onClick={handleClick}
       className={`d-flex flex-column ${styles.recipe}`}>
       <div className={`${styles.imageContainer}`}>
-        <img src={imgRecipe} alt="recipe" />
+        <img src={image} alt="recipe" />
       </div>
       <div
         className={`${styles.recipeTitle} d-flex flex-column justify-content-center align-items-center`}>
-        <h3 className="mb-20">Recipe</h3>
+        <h3 className="mb-20">{title}</h3>
         <i className={`${liked ? "text-primary" : ""} fa-solid fa-heart`}></i>
       </div>
     </div>
