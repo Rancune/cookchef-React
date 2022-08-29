@@ -16,7 +16,7 @@ export const useFetchData = (url, page) => {
           queryParam.append("limit", 9);
         }
 
-        const response = await fetch(`${url}?${queryParam}`);
+        const response = await fetch(`http://localhost:3333/api/recipes`);
         if (response.ok && !cancel) {
           const newData = await response.json();
           setData((x) => Array.isArray(newData) && [...x, ...newData]);

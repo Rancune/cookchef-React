@@ -1,13 +1,12 @@
-import React from "react";
-import styles from "./Loading.module.scss";
+import React from 'react';
+import styles from './Loading.module.scss';
 
 const Loading = () => {
-  return (
-    <div className="d-flex flex-row align-items-center justify-conten-center flex-fil">
-      <i className={`fa-solid fa-spinner ${styles.spinner}`}></i>
-      <h2>Loading</h2>
-    </div>
-  );
+	return (
+		<div className="d-flex flex-row align-items-center justify-content-center flex-fill">
+			<i className={`fa-solid fa-spinner ${styles.spinner}`}></i>
+		</div>
+	);
 };
 
 export default Loading;
