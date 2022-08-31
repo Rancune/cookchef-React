@@ -12,7 +12,7 @@ export const useFetchData = (url, page) => {
         setIsLoading(true);
         const queryParam = new URLSearchParams();
         if (page) {
-          queryParam.append("skip", (page + 1) * 9);
+          queryParam.append("skip", page * 9);
           queryParam.append("limit", 9);
         }
 
